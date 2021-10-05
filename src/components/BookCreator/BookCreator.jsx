@@ -23,11 +23,13 @@ class BookCreator extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label>Book Name</label>
+                <label>Book Name:</label>
                 <input name='title' onChange={this.handleChange} value={this.state.title} />
-                <label>Author</label>
+                <br />
+                <label>Author:</label>
                 <input name='author' onChange={this.handleChange} value={this.state.author} />
-                <button type='submit'>Create Book</button>
+                <br />
+                <button className='btn btn-primary' type='submit'>Create Book</button>
             </form>
         );
     }
